@@ -10,5 +10,14 @@ namespace Game.Props
 
         [SerializeField]
         private BoolGameEvent _collectEvent;
+
+        private void OnTriggerEnter2D(Collider2D collision)
+        {
+            if (collision.transform.CompareTag("Player"))
+            {
+                _collectEvent.OnOcurred(_isYinPart);
+                gameObject.SetActive(false);
+            }
+        }
     }
 }

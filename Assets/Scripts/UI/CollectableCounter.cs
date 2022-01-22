@@ -2,46 +2,49 @@ using Game.ScriptableObjects.Events;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class CollectableCounter : MonoBehaviour
+namespace Game.UI
 {
-    [SerializeField]
-    private GameEvent collectAllEvent;
-
-    [SerializeField]
-    private Text _yangCollectableCounter;
-
-    [SerializeField]
-    private Text _yinCollectableCounter;
-
-    private int _yinCount = 0;
-    private int _yangCount = 0;
-    private int _yinMaxCount;
-    private int _yangMaxCount;
-
-    // Start is called before the first frame update
-    private void Start()
+    public class CollectableCounter : MonoBehaviour
     {
-        var _yinMaxCount = GameObject.FindGameObjectsWithTag("YinCollectable").Length;
-        var _yangMaxCount = GameObject.FindGameObjectsWithTag("YangCollectable").Length;
+        [SerializeField]
+        private GameEvent collectAllEvent;
 
-        _yangCollectableCounter.text = $"{_yangCount}/{_yangMaxCount}";
-        _yinCollectableCounter.text = $"{_yinCount}/{_yinMaxCount}";
-    }
+        [SerializeField]
+        private Text _yangCollectableCounter;
 
-    public void UpdateCount(bool isYinCollected)
-    {
-        if (isYinCollected)
+        [SerializeField]
+        private Text _yinCollectableCounter;
+
+        private int _yinCount = 0;
+        private int _yangCount = 0;
+        private int _yinMaxCount;
+        private int _yangMaxCount;
+
+        // Start is called before the first frame update
+        private void Start()
         {
-            _yinCollectableCounter.text = $"{++_yinCount}/{_yinMaxCount}";
-        }
-        else
-        {
-            _yangCollectableCounter.text = $"{++_yangCount}/{_yangMaxCount}";
+            _yinMaxCount = GameObject.FindGameObjectsWithTag("YinCollectable").Length;
+            _yangMaxCount = GameObject.FindGameObjectsWithTag("YangCollectable").Length;
+
+            _yangCollectableCounter.text = $"{_yangCount}/{_yangMaxCount}";
+            _yinCollectableCounter.text = $"{_yinCount}/{_yinMaxCount}";
         }
 
-        if (_yinCount == _yinMaxCount && _yangCount == _yangMaxCount)
+        public void UpdateCount(bool isYinCollected)
         {
-            collectAllEvent.OnOcurred();
+            if (isYinCollected)
+            {
+                _yinCollectableCounter.text = $"{++_yinCount}/{_yinMaxCount}";
+            }
+            else
+            {
+                _yangCollectableCounter.text = $"{++_yangCount}/{_yangMaxCount}";
+            }
+
+            if (_yinCount == _yinMaxCount && _yangCount == _yangMaxCount)
+            {
+                collectAllEvent.OnOcurred();
+            }
         }
     }
 }

@@ -165,6 +165,7 @@ GameObject:
   m_Component:
   - component: {fileID: 119191450}
   - component: {fileID: 119191451}
+  - component: {fileID: 119191452}
   m_Layer: 5
   m_Name: Scores
   m_TagString: Untagged
@@ -205,9 +206,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b7135523b3b2bd4ab8a9e6132113cc9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  collectAllEvent: {fileID: 0}
-  _yangCollectableCounter: {fileID: 0}
-  _yinCollectableCounter: {fileID: 0}
+  collectAllEvent: {fileID: 11400000, guid: 975028c714b6e2c4f8a83b8dd6a399ed, type: 2}
+  _yangCollectableCounter: {fileID: 1857996237}
+  _yinCollectableCounter: {fileID: 379960824}
+--- !u!114 &119191452
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 119191449}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30066f9dbe65d364fbaf5e12f7234020, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _event: {fileID: 11400000, guid: 9b56fbb4348064646b92c5647cd0c04c, type: 2}
+  _unityEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 119191451}
+        m_TargetAssemblyTypeName: CollectableCounter, Assembly-CSharp
+        m_MethodName: UpdateCount
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &130617716
 GameObject:
   m_ObjectHideFlags: 0
@@ -988,7 +1017,7 @@ GameObject:
   - component: {fileID: 379960825}
   - component: {fileID: 379960824}
   m_Layer: 5
-  m_Name: Text (1)
+  m_Name: YinScoreText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1046,7 +1075,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 0/1
+  m_Text: 0/0
 --- !u!222 &379960825
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4673,7 +4702,7 @@ GameObject:
   - component: {fileID: 1857996238}
   - component: {fileID: 1857996237}
   m_Layer: 5
-  m_Name: Text
+  m_Name: YangScoreText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4731,7 +4760,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 0/1
+  m_Text: 0/0
 --- !u!222 &1857996238
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5340,6 +5369,25 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5e6dde44085062f498cdb7ecbf160f63, type: 3}
+--- !u!1 &1216462620462108347 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1216462619599224415, guid: 5e6dde44085062f498cdb7ecbf160f63, type: 3}
+  m_PrefabInstance: {fileID: 1216462620462108346}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1216462620462108348
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1216462620462108347}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ea3bfadfbb996b4e911e45836d41df4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _isYinPart: 1
+  _collectEvent: {fileID: 11400000, guid: 9b56fbb4348064646b92c5647cd0c04c, type: 2}
 --- !u!1001 &1767171510776238207
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5515,3 +5563,22 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 41f22bea5c1392d429978dbf28a9d778, type: 3}
+--- !u!1 &5164883781700589932 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5164883780457611007, guid: 41f22bea5c1392d429978dbf28a9d778, type: 3}
+  m_PrefabInstance: {fileID: 5164883781700589931}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &5164883781700589933
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5164883781700589932}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ea3bfadfbb996b4e911e45836d41df4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _isYinPart: 0
+  _collectEvent: {fileID: 11400000, guid: 9b56fbb4348064646b92c5647cd0c04c, type: 2}
