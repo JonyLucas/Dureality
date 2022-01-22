@@ -19,3 +19,9 @@ MonoBehaviour:
   - _associatedKey: 97
     _commandType: 1
     _moveSpeed: 1
+  - _associatedKey: 119
+    _commandType: 2
+    _moveSpeed: 1
+  - _associatedKey: 115
+    _commandType: 3
+    _moveSpeed: 1

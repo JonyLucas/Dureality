@@ -1,6 +1,6 @@
 using Game.Commands.Movement;
 using Game.Player.ScriptableObjects;
-using System.Collections;
+using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
@@ -14,45 +14,27 @@ namespace Game.Player
         [SerializeField]
         private bool _isReverse = false;
 
-        //[SerializeField]
-        //private SoundFx _jumpSfx;
-
-        //[SerializeField]
-        //private SoundFx _landingSfx;
-
-        private Rigidbody2D _rigidbody;
-        private Animator _animator;
-        private AudioSource _audioSource;
+        private List<BaseMoveCommand> _moveCommands;
 
         public bool IsFacingRight { get; set; } = true;
         public bool IsMoving { get; set; } = false;
+        public bool CanUseLadder { get; set; } = false;
+        public bool IsUsingLadder { get; set; } = false;
 
-        private void Awake()
+        private void Start()
         {
-            _audioSource = GetComponent<AudioSource>();
-            _rigidbody = GetComponent<Rigidbody2D>();
-            _animator = GetComponent<Animator>();
+            _moveCommands = !_isReverse ? _control.MoveCommands : _control.ReverseCommands;
         }
 
-        private void Update()
+        private void FixedUpdate()
         {
             if (Input.anyKey)
             {
-                BaseMoveCommand command = null;
-                if (!_isReverse)
-                {
-                    command = _control.MoveCommands
-                        .FirstOrDefault(command => Input.GetKey(command.AssociatedKey));
-                }
-                else
-                {
-                    command = _control.ReverseCommands
-                        .FirstOrDefault(command => Input.GetKey(command.AssociatedKey));
-                }
+                var command = _moveCommands.FirstOrDefault(command => Input.GetKey(command.AssociatedKey));
 
                 if (command != null)
                 {
-                    HorizontalMovement(command);
+                    command.Execute(gameObject);
                 }
             }
             else
@@ -64,40 +46,12 @@ namespace Game.Player
             }
         }
 
-        // Check later
-        private void OnGUI()
-        {
-            Event e = Event.current;
-            if (e.isKey)
-            {
-                Debug.Log("Detected Key: " + e.keyCode);
-            }
-        }
-
-        private void HorizontalMovement(BaseMoveCommand command)
-        {
-            if (command.GetType() == typeof(MoveRightCommand))
-            {
-                command.Execute(gameObject);
-                IsFacingRight = true;
-                IsMoving = true;
-            }
-            else if (command.GetType() == typeof(MoveLeftCommand))
-            {
-                command.Execute(gameObject);
-                IsFacingRight = false;
-                IsMoving = true;
-            }
-            else
-            {
-                StopMovement();
-            }
-        }
-
         public void StopMovement()
         {
-            IsMoving = false;
-            _animator.SetBool("isWalking", IsMoving);
+            var command = _control.MoveCommands
+                        .FirstOrDefault(command => command.GetType() == typeof(MoveLeftCommand) || command.GetType() == typeof(MoveRightCommand));
+
+            command.FinalizeAction(gameObject);
         }
 
         public void PlayerDeath()

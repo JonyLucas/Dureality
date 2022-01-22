@@ -14,15 +14,23 @@ namespace Game.Commands.Movement
 
         protected override void ExecuteAction(GameObject gameObject)
         {
-            gameObject.transform.Translate(Vector2.left * speed * Time.deltaTime);
+            moveScript.IsFacingRight = false;
+            moveScript.IsMoving = true;
+            gameObject.transform.Translate(Vector2.left * speed * Time.fixedDeltaTime);
             animator.SetBool(AnimationParameter, true);
             renderer.flipX = true;
         }
 
         protected override bool ExecutionCodition(GameObject gameObject)
         {
-            //return !moveScript.IsCrouching;
+            //return !moveScript.IsClimbing;
             return true;
+        }
+
+        public override void FinalizeAction(GameObject gameObject)
+        {
+            moveScript.IsMoving = false;
+            animator.SetBool(AnimationParameter, false);
         }
     }
 }

@@ -1,18 +1,37 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ClimbingCommand : MonoBehaviour
+namespace Game.Commands.Movement
 {
-    // Start is called before the first frame update
-    void Start()
+    [Serializable]
+    public class ClimbingCommand : BaseMoveCommand
     {
-        
-    }
+        public override string AnimationParameter { get => "isClimbing"; }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        public ClimbingCommand(KeyCode associatedKey, float speedValue) : base(associatedKey, speedValue)
+        {
+        }
+
+        protected override void ExecuteAction(GameObject gameObject)
+        {
+            moveScript.IsUsingLadder = true;
+            moveScript.StopMovement();
+            rigidbody.bodyType = RigidbodyType2D.Kinematic;
+            gameObject.transform.Translate(Vector2.up * speed * Time.fixedDeltaTime);
+            //animator.SetBool(AnimationParameter, true);
+        }
+
+        protected override bool ExecutionCodition(GameObject gameObject)
+        {
+            return moveScript.CanUseLadder && !moveScript.IsMoving;
+        }
+
+        public override void FinalizeAction(GameObject gameObject)
+        {
+            moveScript.IsUsingLadder = false;
+            rigidbody.bodyType = RigidbodyType2D.Dynamic;
+        }
     }
 }

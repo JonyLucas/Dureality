@@ -1,33 +1,36 @@
 using UnityEngine;
 
-public class BlockAnimation : MonoBehaviour
+namespace Game.Props
 {
-    [SerializeField]
-    private float _speed = 2;
-
-    [SerializeField]
-    private float _finalYPosition = 10;
-
-    private Vector2 _moveDirection = Vector2.up;
-
-    private void Start()
+    public class BlockAnimation : MonoBehaviour
     {
-        if (transform.position.y > _finalYPosition)
-        {
-            _moveDirection = Vector2.up;
-        }
-        else
-        {
-            _moveDirection = Vector2.down;
-        }
-    }
+        [SerializeField]
+        private float _speed = 2;
 
-    private void FixedUpdate()
-    {
-        transform.Translate(_moveDirection * _speed * Time.fixedDeltaTime);
-        if (Mathf.Abs(transform.position.y) > Mathf.Abs(_finalYPosition))
+        [SerializeField]
+        private float _finalYPosition = 10;
+
+        private Vector2 _moveDirection = Vector2.up;
+
+        private void Start()
         {
-            gameObject.SetActive(false);
+            if (transform.position.y > _finalYPosition)
+            {
+                _moveDirection = Vector2.up;
+            }
+            else
+            {
+                _moveDirection = Vector2.down;
+            }
+        }
+
+        private void FixedUpdate()
+        {
+            transform.Translate(_moveDirection * _speed * Time.fixedDeltaTime);
+            if (Mathf.Abs(transform.position.y) > Mathf.Abs(_finalYPosition))
+            {
+                gameObject.SetActive(false);
+            }
         }
     }
 }

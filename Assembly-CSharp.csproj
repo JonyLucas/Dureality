@@ -68,6 +68,8 @@
     <Compile Include="Assets\Scripts\Commands\Movement\MoveRightCommand.cs" />
     <Compile Include="Assets\Scripts\Props\BlockAnimation.cs" />
     <Compile Include="Assets\Scripts\Props\CollectableAnimations.cs" />
+    <Compile Include="Assets\Scripts\Props\LaddersBehaviour.cs" />
+    <Compile Include="Assets\Scripts\UI\ChangeAssociatedKey.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

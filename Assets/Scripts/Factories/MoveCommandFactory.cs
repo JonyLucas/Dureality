@@ -40,7 +40,24 @@ namespace Game.Commands.Factories
                     {
                         return new MoveLeftCommand(_associatedKey, _moveSpeed);
                     }
-
+                case MoveCommandType.Climb:
+                    if (!isReverse)
+                    {
+                        return new ClimbingCommand(_associatedKey, _moveSpeed);
+                    }
+                    else
+                    {
+                        return new DescendingCommand(_associatedKey, _moveSpeed);
+                    }
+                case MoveCommandType.Descend:
+                    if (!isReverse)
+                    {
+                        return new DescendingCommand(_associatedKey, _moveSpeed);
+                    }
+                    else
+                    {
+                        return new ClimbingCommand(_associatedKey, _moveSpeed);
+                    }
                 default:
                     return null;
             }
