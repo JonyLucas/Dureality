@@ -1,10 +1,19 @@
 fileFormatVersion: 2
-guid: 343162ffc98d46e4d8db3c8dce8cc7ec
+guid: d727df2b0b1e00e488a7fe65ed33f7f8
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6922878125322666531
-    second: black_platform_0
+      213: -1213901540316669182
+    second: Idle_Yang_0
+  - first:
+      213: -3470633163999098520
+    second: Idle_Yang_1
+  - first:
+      213: 5505811830575260444
+    second: Idle_Yang_2
+  - first:
+      213: 4111058265349686625
+    second: Idle_Yang_3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -44,7 +53,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -90,50 +99,89 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: black_platform_0
+      name: Idle_Yang_0
       rect:
         serializedVersion: 2
-        x: 4
-        y: 3
-        width: 57
-        height: 57
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 23
+        y: 73
+        width: 21
+        height: 49
+      alignment: 9
+      pivot: {x: 64, y: 64}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3220e2bd9f0031060800000000000000
-      internalID: 6922878125322666531
+      spriteID: 20b10290bfa572fe0800000000000000
+      internalID: -1213901540316669182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle_Yang_1
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 73
+        width: 22
+        height: 49
+      alignment: 9
+      pivot: {x: 64, y: 64}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 869c42a8685d5dfc0800000000000000
+      internalID: -3470633163999098520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle_Yang_2
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 9
+        width: 21
+        height: 50
+      alignment: 9
+      pivot: {x: 64, y: 64}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c13e49950b2986c40800000000000000
+      internalID: 5505811830575260444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle_Yang_3
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 9
+        width: 22
+        height: 50
+      alignment: 9
+      pivot: {x: 64, y: 64}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1650a1506b96d0930800000000000000
+      internalID: 4111058265349686625
       vertices: []
       indices: 
       edges: []
@@ -141,7 +189,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: d155a98a5a1b1ed4e8e056b30cb6024f
+    spriteID: 4381c551cc34b0144981a16bf866f19e
     internalID: 0
     vertices: []
     indices: 

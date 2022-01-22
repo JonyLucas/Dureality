@@ -1,10 +1,31 @@
 fileFormatVersion: 2
-guid: 343162ffc98d46e4d8db3c8dce8cc7ec
+guid: d3fb8c60c097606449831e20544018e6
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6922878125322666531
-    second: black_platform_0
+      213: -9116157326516664672
+    second: Idle_Yin 1_0
+  - first:
+      213: -8916564615971162360
+    second: Idle_Yin 1_1
+  - first:
+      213: 7205756527917793630
+    second: Idle_Yin 1_2
+  - first:
+      213: 6244808993466656778
+    second: Idle_Yin 1_3
+  - first:
+      213: 174846334865940283
+    second: Idle_Yin 1_0
+  - first:
+      213: -836769516753623709
+    second: Idle_Yin 1_1
+  - first:
+      213: 8085939305870007725
+    second: Idle_Yin 1_2
+  - first:
+      213: 7219166032871319144
+    second: Idle_Yin 1_3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -44,7 +65,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -118,13 +139,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: black_platform_0
+      name: Idle_Yin 1_0
       rect:
         serializedVersion: 2
-        x: 4
-        y: 3
-        width: 57
-        height: 57
+        x: 0
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -132,8 +153,71 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3220e2bd9f0031060800000000000000
-      internalID: 6922878125322666531
+      spriteID: b3f96ffa0dd2d6200800000000000000
+      internalID: 174846334865940283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle_Yin 1_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3656603de823364f0800000000000000
+      internalID: -836769516753623709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle_Yin 1_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dad10c125f6073070800000000000000
+      internalID: 8085939305870007725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle_Yin 1_3
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8666cd31241af2460800000000000000
+      internalID: 7219166032871319144
       vertices: []
       indices: 
       edges: []
@@ -141,7 +225,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: d155a98a5a1b1ed4e8e056b30cb6024f
+    spriteID: 8f6145295d2df2d45aab31c14965b7f7
     internalID: 0
     vertices: []
     indices: 

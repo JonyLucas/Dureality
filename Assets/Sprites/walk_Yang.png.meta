@@ -1,43 +1,43 @@
 fileFormatVersion: 2
-guid: f2152197e837e6749bde57e8a20d514d
+guid: 189a5f85bce85ef4b8961307f12a21bf
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -54863785941487461
-    second: walk_Yin_0
+      213: 3080025461490829538
+    second: walk_Yang_0
   - first:
-      213: 2883830892402483230
-    second: walk_Yin_1
+      213: -5919939361673799126
+    second: walk_Yang_1
   - first:
-      213: 3190435403249934711
-    second: walk_Yin_2
+      213: 3836528336014903121
+    second: walk_Yang_2
   - first:
-      213: -8809465448052315970
-    second: walk_Yin_3
+      213: 2356300937141610012
+    second: walk_Yang_3
   - first:
-      213: -8950498053462905526
-    second: walk_Yin_4
+      213: 6283516847086488517
+    second: walk_Yang_4
   - first:
-      213: -3263888931027217826
-    second: walk_Yin_5
+      213: 582223868150887200
+    second: walk_Yang_5
   - first:
-      213: -6994357109813812608
-    second: walk_Yin_0
+      213: 3221058465687431786
+    second: walk_Yang_0
   - first:
-      213: 7665675593767618819
-    second: walk_Yin_1
+      213: -1787342162842895440
+    second: walk_Yang_1
   - first:
-      213: 4870297199628105630
-    second: walk_Yin_2
+      213: -6085999069719463942
+    second: walk_Yang_2
   - first:
-      213: -5404675638017515619
-    second: walk_Yin_3
+      213: -832390797957429255
+    second: walk_Yang_3
   - first:
-      213: 2627030057302236916
-    second: walk_Yin_4
+      213: 2727247046538850252
+    second: walk_Yang_4
   - first:
-      213: -488892050684775756
-    second: walk_Yin_5
+      213: -5030739890229952905
+    second: walk_Yang_5
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -123,35 +123,11 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: walk_Yin_0
+      name: walk_Yang_0
       rect:
         serializedVersion: 2
         x: 0
@@ -165,14 +141,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 082e15d244d0fee90800000000000000
-      internalID: -6994357109813812608
+      spriteID: a6a6010db9f73bc20800000000000000
+      internalID: 3221058465687431786
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walk_Yin_1
+      name: walk_Yang_1
       rect:
         serializedVersion: 2
         x: 64
@@ -186,14 +162,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 30986e98653f16a60800000000000000
-      internalID: 7665675593767618819
+      spriteID: 0bbbbabc5c51237e0800000000000000
+      internalID: -1787342162842895440
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walk_Yin_2
+      name: walk_Yang_2
       rect:
         serializedVersion: 2
         x: 0
@@ -207,14 +183,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e97b966cf75c69340800000000000000
-      internalID: 4870297199628105630
+      spriteID: af7730257103a8ba0800000000000000
+      internalID: -6085999069719463942
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walk_Yin_3
+      name: walk_Yang_3
       rect:
         serializedVersion: 2
         x: 64
@@ -228,14 +204,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d9f12c5742cbef4b0800000000000000
-      internalID: -5404675638017515619
+      spriteID: 9f7817dbaf0c274f0800000000000000
+      internalID: -832390797957429255
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walk_Yin_4
+      name: walk_Yang_4
       rect:
         serializedVersion: 2
         x: 0
@@ -249,14 +225,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4fe16c32be5157420800000000000000
-      internalID: 2627030057302236916
+      spriteID: ccf6eaf3db029d520800000000000000
+      internalID: 2727247046538850252
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walk_Yin_5
+      name: walk_Yang_5
       rect:
         serializedVersion: 2
         x: 64
@@ -270,8 +246,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4b2fb69254b1739f0800000000000000
-      internalID: -488892050684775756
+      spriteID: 77eb47d49b83f2ab0800000000000000
+      internalID: -5030739890229952905
       vertices: []
       indices: 
       edges: []
@@ -279,7 +255,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 7bf7a47cb499b5e43ae577ab001a6e1b
+    spriteID: 6a9a3cf062a727c4690be57d3182ba90
     internalID: 0
     vertices: []
     indices: 
