@@ -1,4 +1,5 @@
 using Game.Player;
+using System.Collections;
 using UnityEngine;
 
 namespace Game.Props
@@ -6,11 +7,11 @@ namespace Game.Props
     public class LaddersBehaviour : MonoBehaviour
     {
         [SerializeField]
-        private bool _bottomLadder;
+        private Vector2 _ladderDirection;
 
         private PlayerMovement _moveScript;
 
-        private void OnTriggerStay2D(Collider2D collision)
+        private void OnTriggerEnter2D(Collider2D collision)
         {
             if (collision.gameObject.CompareTag("Player"))
             {
@@ -18,8 +19,26 @@ namespace Game.Props
                 {
                     _moveScript = collision.transform.GetComponent<PlayerMovement>();
                 }
-                _moveScript.CanUseLadder = true;
+
+                _moveScript.ClimbDirection = _ladderDirection;
+
+                if (!_moveScript.IsUsingLadder)
+                {
+                    _moveScript.CanUseLadder = true;
+                }
+                else
+                {
+                    _moveScript.StopClimbing();
+                    StartCoroutine(StopClimbingCoroutine());
+                }
             }
+        }
+
+        private IEnumerator StopClimbingCoroutine()
+        {
+            _moveScript.CanUseLadder = false;
+            yield return new WaitForSeconds(0.5f);
+            _moveScript.CanUseLadder = true;
         }
 
         private void OnTriggerExit2D(Collider2D collision)
@@ -30,7 +49,13 @@ namespace Game.Props
                 {
                     _moveScript = collision.transform.GetComponent<PlayerMovement>();
                 }
-                _moveScript.CanUseLadder = false;
+
+                _moveScript.ClimbDirection = Vector2.zero;
+
+                if (!_moveScript.IsUsingLadder)
+                {
+                    _moveScript.CanUseLadder = false;
+                }
             }
         }
     }

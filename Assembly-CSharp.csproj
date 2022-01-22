@@ -83,6 +83,7 @@
     <Compile Include="Assets\Scripts\Observers\Events\GameEvent.cs" />
     <Compile Include="Assets\Scripts\Commands\Movement\BaseMoveCommand.cs" />
     <Compile Include="Assets\Scripts\Commands\Movement\MoveRightCommand.cs" />
+    <Compile Include="Assets\Scripts\Extensions\VectorExtension.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
