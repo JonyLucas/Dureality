@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 3979107761205484188}
   - component: {fileID: 3979107761205484189}
   - component: {fileID: 3979107761205484190}
+  - component: {fileID: 399682029}
   m_Layer: 0
   m_Name: YinPlayer
   m_TagString: Player
@@ -166,3 +167,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _control: {fileID: 11400000, guid: 004e5eda94de60d46a14eccf31bc98e7, type: 2}
   _isReverse: 0
+--- !u!114 &399682029
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3979107761205484160}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f7c88a48ea4b944d9e1547033e8a234, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _playerDeathEvent: {fileID: 11400000, guid: 9bdc670390bcf264e89f8f081618ce6a, type: 2}

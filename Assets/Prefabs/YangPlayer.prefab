@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 1767171509702658974}
   - component: {fileID: 1767171509702658973}
   - component: {fileID: 1767171509702658972}
+  - component: {fileID: 1074174942}
   m_Layer: 0
   m_Name: YangPlayer
   m_TagString: Player
@@ -166,3 +167,16 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1074174942
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1767171509702658978}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f7c88a48ea4b944d9e1547033e8a234, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _playerDeathEvent: {fileID: 11400000, guid: 9bdc670390bcf264e89f8f081618ce6a, type: 2}

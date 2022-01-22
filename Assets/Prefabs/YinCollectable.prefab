@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 1216462619599224412}
   - component: {fileID: 1216462619599224403}
   - component: {fileID: 1425010918}
+  - component: {fileID: 1216462620462108348}
   m_Layer: 0
   m_Name: YinCollectable
   m_TagString: YinCollectable
@@ -144,3 +145,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _yDistance: 0.1
   _speed: 0.2
+--- !u!114 &1216462620462108348
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1216462619599224415}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ea3bfadfbb996b4e911e45836d41df4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _isYinPart: 1
+  _collectEvent: {fileID: 11400000, guid: 9b56fbb4348064646b92c5647cd0c04c, type: 2}
