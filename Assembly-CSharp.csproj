@@ -70,6 +70,15 @@
     <Compile Include="Assets\Scripts\Props\CollectableAnimations.cs" />
     <Compile Include="Assets\Scripts\Props\LaddersBehaviour.cs" />
     <Compile Include="Assets\Scripts\UI\ChangeAssociatedKey.cs" />
+    <Compile Include="Assets\Scripts\Props\ObjectiveAnimation.cs" />
+    <Compile Include="Assets\Scripts\Observers\Events\GameEvent.cs" />
+    <Compile Include="Assets\Scripts\Observers\Listeners\EventListener.cs" />
+    <Compile Include="Assets\Scripts\Observers\Events\IntGameEvent.cs" />
+    <Compile Include="Assets\Scripts\Observers\Listeners\GenericEventListener.cs" />
+    <Compile Include="Assets\Scripts\Observers\Events\GenericGameEvent.cs" />
+    <Compile Include="Assets\Scripts\Observers\Listeners\IntEventListener.cs" />
+    <Compile Include="Assets\Scripts\Props\SpikesBehaviour.cs" />
+    <Compile Include="Assets\Scripts\Player\PlayerHealth.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

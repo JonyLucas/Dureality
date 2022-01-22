@@ -23,6 +23,7 @@ namespace Game.Player
 
         private void Start()
         {
+            _control.InitializeCommands(gameObject);
             _moveCommands = !_isReverse ? _control.MoveCommands : _control.ReverseCommands;
         }
 
