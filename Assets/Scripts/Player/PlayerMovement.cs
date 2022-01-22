@@ -48,10 +48,13 @@ namespace Game.Player
 
         public void StopMovement()
         {
-            var command = _control.MoveCommands
+            var command = _moveCommands
                         .FirstOrDefault(command => command.GetType() == typeof(MoveLeftCommand) || command.GetType() == typeof(MoveRightCommand));
 
-            command.FinalizeAction(gameObject);
+            if (command != null)
+            {
+                command.FinalizeAction(gameObject);
+            }
         }
 
         public void PlayerDeath()
