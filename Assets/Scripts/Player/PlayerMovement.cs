@@ -20,6 +20,7 @@ namespace Game.Player
         public bool IsMoving { get; set; } = false;
         public bool CanUseLadder { get; set; } = false;
         public bool IsUsingLadder { get; set; } = false;
+        public Vector3 MoveDirection { get; set; }
 
         private void Start()
         {

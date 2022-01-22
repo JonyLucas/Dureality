@@ -23,8 +23,7 @@ namespace Game.Commands.Movement
 
         protected override bool ExecutionCodition(GameObject gameObject)
         {
-            //return !moveScript.IsClimbing;
-            return true;
+            return !moveScript.IsUsingLadder;
         }
 
         public override void FinalizeAction(GameObject gameObject)
