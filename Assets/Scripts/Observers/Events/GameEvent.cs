@@ -8,7 +8,7 @@ namespace Game.ScriptableObjects.Events
     /// This class implements the observer pattern, which calls the methods that are listening to this specific event.
     /// These methods are invoked when this event occurs.
     /// </summary>
-    [CreateAssetMenu(fileName = "New Event", menuName = "Game Event", order = 54)]
+    [CreateAssetMenu(fileName = "New Event", menuName = "Game Event", order = 55)]
     public class GameEvent : ScriptableObject
     {
         private readonly List<EventListener> _listeners = new List<EventListener>();

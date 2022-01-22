@@ -5,7 +5,7 @@ using UnityEngine;
 
 namespace Game.Player.ScriptableObjects
 {
-    [CreateAssetMenu(menuName = "Player Control", fileName = "Player Control", order = 55)]
+    [CreateAssetMenu(menuName = "Player Control", fileName = "Player Control", order = 54)]
     public class PlayerControl : ScriptableObject
     {
         [SerializeField]

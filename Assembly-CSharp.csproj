@@ -67,7 +67,7 @@
     <Compile Include="Assets\Scripts\Commands\Movement\BaseMoveCommand.cs" />
     <Compile Include="Assets\Scripts\Commands\Movement\MoveRightCommand.cs" />
     <Compile Include="Assets\Scripts\Props\BlockAnimation.cs" />
-    <Compile Include="Assets\Scripts\Props\CollectableAnimations.cs" />
+    <Compile Include="Assets\Scripts\Props\Collectables\CollectableAnimations.cs" />
     <Compile Include="Assets\Scripts\Props\LaddersBehaviour.cs" />
     <Compile Include="Assets\Scripts\UI\ChangeAssociatedKey.cs" />
     <Compile Include="Assets\Scripts\Props\ObjectiveAnimation.cs" />
@@ -79,6 +79,10 @@
     <Compile Include="Assets\Scripts\Observers\Listeners\IntEventListener.cs" />
     <Compile Include="Assets\Scripts\Props\SpikesBehaviour.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerHealth.cs" />
+    <Compile Include="Assets\Scripts\UI\CollectableCounter.cs" />
+    <Compile Include="Assets\Scripts\Observers\Events\BoolGameEvent.cs" />
+    <Compile Include="Assets\Scripts\Observers\Listeners\BoolEventListener.cs" />
+    <Compile Include="Assets\Scripts\Props\Collectables\CollectableBehaviour.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
