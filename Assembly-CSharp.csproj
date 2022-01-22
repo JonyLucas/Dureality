@@ -56,16 +56,17 @@
     <Analyzer Include="D:\Arquivos de Programas\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Player\PlayerMovement.cs" />
+    <Compile Include="Assets\Scripts\Factories\MoveCommandFactory.cs" />
+    <Compile Include="Assets\Scripts\Commands\Movement\ClimbingCommand.cs" />
     <Compile Include="Assets\Scripts\Commands\Movement\MoveLeftCommand.cs" />
+    <Compile Include="Assets\Scripts\Commands\Movement\DescendingCommand.cs" />
+    <Compile Include="Assets\Scripts\Enums\MoveCommandType.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerControl.cs" />
     <Compile Include="Assets\Scripts\Commands\BaseCommand.cs" />
     <Compile Include="Assets\Scripts\Commands\Movement\BaseMoveCommand.cs" />
     <Compile Include="Assets\Scripts\Commands\Movement\MoveRightCommand.cs" />
-    <Compile Include="Assets\Scripts\Player\PlayerMovement.cs" />
-    <Compile Include="Assets\Scripts\Commands\Movement\ClimbingCommand.cs" />
-    <Compile Include="Assets\Scripts\Commands\Movement\DescendingCommand.cs" />
-    <Compile Include="Assets\Scripts\Enums\MoveCommandType.cs" />
-    <Compile Include="Assets\Scripts\Factories\MoveCommandFactory.cs" />
+    <Compile Include="Assets\Scripts\Props\BlockAnimation.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

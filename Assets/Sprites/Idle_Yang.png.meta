@@ -106,12 +106,12 @@ TextureImporter:
       name: Idle_Yang_0
       rect:
         serializedVersion: 2
-        x: 23
-        y: 73
-        width: 21
-        height: 49
-      alignment: 9
-      pivot: {x: 64, y: 64}
+        x: 0
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -127,12 +127,12 @@ TextureImporter:
       name: Idle_Yang_1
       rect:
         serializedVersion: 2
-        x: 87
-        y: 73
-        width: 22
-        height: 49
-      alignment: 9
-      pivot: {x: 64, y: 64}
+        x: 64
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -148,12 +148,12 @@ TextureImporter:
       name: Idle_Yang_2
       rect:
         serializedVersion: 2
-        x: 23
-        y: 9
-        width: 21
-        height: 50
-      alignment: 9
-      pivot: {x: 64, y: 64}
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -169,12 +169,12 @@ TextureImporter:
       name: Idle_Yang_3
       rect:
         serializedVersion: 2
-        x: 87
-        y: 9
-        width: 22
-        height: 50
-      alignment: 9
-      pivot: {x: 64, y: 64}
+        x: 64
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

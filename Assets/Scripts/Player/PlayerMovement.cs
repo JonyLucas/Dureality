@@ -11,6 +11,9 @@ namespace Game.Player
         [SerializeField]
         private PlayerControl _control;
 
+        [SerializeField]
+        private bool _isReverse = false;
+
         //[SerializeField]
         //private SoundFx _jumpSfx;
 
@@ -35,8 +38,17 @@ namespace Game.Player
         {
             if (Input.anyKey)
             {
-                var command = _control.MoveCommands
-                    .FirstOrDefault(command => Input.GetKey(command.AssociatedKey));
+                BaseMoveCommand command = null;
+                if (!_isReverse)
+                {
+                    command = _control.MoveCommands
+                        .FirstOrDefault(command => Input.GetKey(command.AssociatedKey));
+                }
+                else
+                {
+                    command = _control.ReverseCommands
+                        .FirstOrDefault(command => Input.GetKey(command.AssociatedKey));
+                }
 
                 if (command != null)
                 {

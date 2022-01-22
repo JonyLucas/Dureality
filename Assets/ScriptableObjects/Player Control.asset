@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: edb693ed1c2b648408613718d5b317fb, type: 3}
   m_Name: Player Control
   m_EditorClassIdentifier: 
-  _commands:
+  _commandsFactory:
   - _associatedKey: 100
     _commandType: 0
     _moveSpeed: 1

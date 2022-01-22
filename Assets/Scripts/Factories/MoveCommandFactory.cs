@@ -17,15 +17,29 @@ namespace Game.Commands.Factories
         [SerializeField]
         private float _moveSpeed = 1;
 
-        public BaseMoveCommand Create()
+        public BaseMoveCommand Create(bool isReverse = false)
         {
             switch (_commandType)
             {
                 case MoveCommandType.MoveLeft:
-                    return new MoveLeftCommand(_associatedKey, _moveSpeed);
+                    if (!isReverse)
+                    {
+                        return new MoveLeftCommand(_associatedKey, _moveSpeed);
+                    }
+                    else
+                    {
+                        return new MoveRightCommand(_associatedKey, _moveSpeed);
+                    }
 
                 case MoveCommandType.MoveRight:
-                    return new MoveRightCommand(_associatedKey, _moveSpeed);
+                    if (!isReverse)
+                    {
+                        return new MoveRightCommand(_associatedKey, _moveSpeed);
+                    }
+                    else
+                    {
+                        return new MoveLeftCommand(_associatedKey, _moveSpeed);
+                    }
 
                 default:
                     return null;
