@@ -13,7 +13,6 @@ namespace Game.Commands.Movement
         protected override void ExecuteAction(GameObject gameObject)
         {
             moveScript.IsUsingLadder = true;
-            moveScript.MoveDirection = Vector3.down;
             moveScript.StopMovement();
             rigidbody.bodyType = RigidbodyType2D.Kinematic;
             gameObject.transform.Translate(Vector2.down * speed * Time.fixedDeltaTime);
@@ -22,7 +21,7 @@ namespace Game.Commands.Movement
 
         protected override bool ExecutionCodition(GameObject gameObject)
         {
-            return moveScript.CanUseLadder && !moveScript.IsMoving;
+            return moveScript.CanUseLadder && !moveScript.IsMoving && moveScript.ClimbDirection != Vector2.up;
         }
 
         public override void FinalizeAction(GameObject gameObject)

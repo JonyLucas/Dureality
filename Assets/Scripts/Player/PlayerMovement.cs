@@ -8,19 +8,26 @@ namespace Game.Player
 {
     public class PlayerMovement : MonoBehaviour
     {
+        // Fields
         [SerializeField]
         private PlayerControl _control;
 
         [SerializeField]
         private bool _isReverse = false;
 
+        [SerializeField]
+        private float _xLimit = 0.2f;
+
         private List<BaseMoveCommand> _moveCommands;
 
+        // Properties
         public bool IsFacingRight { get; set; } = true;
         public bool IsMoving { get; set; } = false;
         public bool CanUseLadder { get; set; } = false;
         public bool IsUsingLadder { get; set; } = false;
-        public Vector3 MoveDirection { get; set; }
+        public Vector2 ClimbDirection { get; set; } = Vector2.zero;
+        public float XLimit
+        { get { return _xLimit; } }
 
         private void Start()
         {
@@ -52,6 +59,17 @@ namespace Game.Player
         {
             var command = _moveCommands
                         .FirstOrDefault(command => command.GetType() == typeof(MoveLeftCommand) || command.GetType() == typeof(MoveRightCommand));
+
+            if (command != null)
+            {
+                command.FinalizeAction(gameObject);
+            }
+        }
+
+        public void StopClimbing()
+        {
+            var command = _moveCommands
+            .FirstOrDefault(command => command.GetType() == typeof(ClimbingCommand) || command.GetType() == typeof(DescendingCommand));
 
             if (command != null)
             {
