@@ -23,13 +23,22 @@ namespace Game.Commands.Movement
 
         protected override bool ExecutionCodition(GameObject gameObject)
         {
-            return !moveScript.IsUsingLadder;
+            var xPosition = moveScript.transform.position.x;
+            return !moveScript.IsUsingLadder && Mathf.Abs(xPosition) >= Mathf.Abs(moveScript.XLimit);
         }
 
         public override void FinalizeAction(GameObject gameObject)
         {
             moveScript.IsMoving = false;
             animator.SetBool(AnimationParameter, false);
+
+            var xPosition = moveScript.transform.position.x;
+            if (Mathf.Abs(xPosition) < Mathf.Abs(moveScript.XLimit))
+            {
+                var newPosition = moveScript.transform.position;
+                newPosition.x = moveScript.XLimit;
+                moveScript.transform.position = newPosition;
+            }
         }
     }
 }

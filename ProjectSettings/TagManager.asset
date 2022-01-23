@@ -44,3 +44,12 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Collectables
+    uniqueID: 3057571723
+    locked: 0
+  - name: Tiles
+    uniqueID: 3130653509
+    locked: 0
+  - name: Player
+    uniqueID: 4056356873
+    locked: 0

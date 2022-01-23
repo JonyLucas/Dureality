@@ -66,7 +66,7 @@
     <Compile Include="Assets\Scripts\UI\CollectableCounter.cs" />
     <Compile Include="Assets\Scripts\Props\SpikesBehaviour.cs" />
     <Compile Include="Assets\Scripts\Enums\MoveCommandType.cs" />
-    <Compile Include="Assets\Scripts\Props\ObjectiveAnimation.cs" />
+    <Compile Include="Assets\Scripts\Props\Objective\ObjectiveAnimation.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerControl.cs" />
     <Compile Include="Assets\Scripts\Observers\Listeners\BoolEventListener.cs" />
     <Compile Include="Assets\Scripts\Observers\Listeners\IntEventListener.cs" />
@@ -84,6 +84,8 @@
     <Compile Include="Assets\Scripts\Commands\Movement\BaseMoveCommand.cs" />
     <Compile Include="Assets\Scripts\Commands\Movement\MoveRightCommand.cs" />
     <Compile Include="Assets\Scripts\Extensions\VectorExtension.cs" />
+    <Compile Include="Assets\Scripts\UI\ChangeSceneScript.cs" />
+    <Compile Include="Assets\Scripts\Props\Objective\ObjectiveBehaviour.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
