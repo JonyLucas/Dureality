@@ -62,6 +62,7 @@
     <Compile Include="Assets\Scripts\Commands\Movement\MoveLeftCommand.cs" />
     <Compile Include="Assets\Scripts\Commands\Movement\DescendingCommand.cs" />
     <Compile Include="Assets\Scripts\UI\ChangeAssociatedKey.cs" />
+    <Compile Include="Assets\Scripts\UI\ChangeSceneScript.cs" />
     <Compile Include="Assets\Scripts\Props\BlockAnimation.cs" />
     <Compile Include="Assets\Scripts\UI\CollectableCounter.cs" />
     <Compile Include="Assets\Scripts\Props\SpikesBehaviour.cs" />
@@ -77,15 +78,15 @@
     <Compile Include="Assets\Scripts\Props\Collectables\CollectableAnimations.cs" />
     <Compile Include="Assets\Scripts\Props\LaddersBehaviour.cs" />
     <Compile Include="Assets\Scripts\Commands\BaseCommand.cs" />
+    <Compile Include="Assets\Scripts\Extensions\VectorExtension.cs" />
     <Compile Include="Assets\Scripts\Observers\Events\GenericGameEvent.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerHealth.cs" />
     <Compile Include="Assets\Scripts\Observers\Events\IntGameEvent.cs" />
+    <Compile Include="Assets\Scripts\Props\Objective\ObjectiveBehaviour.cs" />
     <Compile Include="Assets\Scripts\Observers\Events\GameEvent.cs" />
     <Compile Include="Assets\Scripts\Commands\Movement\BaseMoveCommand.cs" />
     <Compile Include="Assets\Scripts\Commands\Movement\MoveRightCommand.cs" />
-    <Compile Include="Assets\Scripts\Extensions\VectorExtension.cs" />
-    <Compile Include="Assets\Scripts\UI\ChangeSceneScript.cs" />
-    <Compile Include="Assets\Scripts\Props\Objective\ObjectiveBehaviour.cs" />
+    <Compile Include="Assets\Scripts\Extensions\AnimatorExtension.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

@@ -1835,6 +1835,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: YinPlayer
       objectReference: {fileID: 0}
+    - target: {fileID: 3979107761205484161, guid: 29349beec9064c442a189a6f2f6602fc, type: 3}
+      propertyPath: m_FlipX
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3979107761205484162, guid: 29349beec9064c442a189a6f2f6602fc, type: 3}
       propertyPath: m_RootOrder
       value: 5

@@ -58,6 +58,7 @@ namespace Game.Commands.Factories
                     {
                         return new ClimbingCommand(_associatedKey, _moveSpeed);
                     }
+
                 default:
                     return null;
             }
