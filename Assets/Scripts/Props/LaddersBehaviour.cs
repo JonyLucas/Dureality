@@ -1,3 +1,4 @@
+using Game.Extensions;
 using Game.Player;
 using System.Collections;
 using UnityEngine;
@@ -20,7 +21,7 @@ namespace Game.Props
                     _moveScript = collision.transform.GetComponent<PlayerMovement>();
                 }
 
-                _moveScript.ClimbDirection = _ladderDirection;
+                _moveScript.ClimbDirection = _ladderDirection.GetProminentVectorComponent();
 
                 if (!_moveScript.IsUsingLadder)
                 {
