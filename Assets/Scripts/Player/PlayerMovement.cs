@@ -22,7 +22,6 @@ namespace Game.Player
 
         // Properties
         public bool IsFacingRight { get; set; } = true;
-
         public bool IsMoving { get; set; } = false;
         public bool CanUseLadder { get; set; } = false;
         public bool IsUsingLadder { get; set; } = false;
