@@ -28,11 +28,5 @@ namespace Game.Player.ScriptableObjects
             _commandsFactory.ForEach(command => _moveCommands.Add(command.Create()));
             _commandsFactory.ForEach(command => _reverseCommands.Add(command.Create(true)));
         }
-
-        public void InitializeCommands(GameObject gameObject)
-        {
-            _moveCommands.ForEach(command => command.InitializeFields(gameObject));
-            _reverseCommands.ForEach(command => command.InitializeFields(gameObject));
-        }
     }
 }

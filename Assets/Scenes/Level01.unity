@@ -4324,9 +4324,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1767171509702658976, guid: ce697992177d61748b3791f7c2e347ff, type: 3}
+      propertyPath: m_FlipX
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1767171509702658978, guid: ce697992177d61748b3791f7c2e347ff, type: 3}
       propertyPath: m_Name
       value: YangPlayer
+      objectReference: {fileID: 0}
+    - target: {fileID: 1767171509702658978, guid: ce697992177d61748b3791f7c2e347ff, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ce697992177d61748b3791f7c2e347ff, type: 3}

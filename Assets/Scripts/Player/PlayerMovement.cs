@@ -9,6 +9,7 @@ namespace Game.Player
     public class PlayerMovement : MonoBehaviour
     {
         // Fields
+
         [SerializeField]
         private PlayerControl _control;
 
@@ -21,8 +22,8 @@ namespace Game.Player
         private List<BaseMoveCommand> _moveCommands;
 
         // Properties
-        public bool IsFacingRight { get; set; } = true;
 
+        public bool IsFacingRight { get; set; } = true;
         public bool IsWalking { get; set; } = false;
         public bool CanUseLadder { get; set; } = false;
         public bool IsUsingLadder { get; set; } = false;
@@ -33,8 +34,8 @@ namespace Game.Player
 
         private void Start()
         {
-            _control.InitializeCommands(gameObject);
             _moveCommands = !_isReverse ? _control.MoveCommands : _control.ReverseCommands;
+            _moveCommands.ForEach(command => command.InitializeFields(gameObject));
         }
 
         private void FixedUpdate()
@@ -52,7 +53,6 @@ namespace Game.Player
             {
                 if (IsWalking)
                 {
-                    Debug.Log("STOP");
                     StopMovement();
                 }
             }
@@ -61,7 +61,7 @@ namespace Game.Player
         public void StopMovement()
         {
             var command = _moveCommands
-                        .FirstOrDefault(command => command.GetType() == typeof(MoveLeftCommand));
+                        .FirstOrDefault(command => command.GetType().BaseType == typeof(WalkingCommand));
 
             if (command != null)
             {
