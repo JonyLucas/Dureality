@@ -42,6 +42,24 @@ namespace Game.Props
             _moveScript.CanUseLadder = true;
         }
 
+        private void OnTriggerStay2D(Collider2D collision)
+        {
+            if (collision.gameObject.CompareTag("Player"))
+            {
+                if (_moveScript == null)
+                {
+                    _moveScript = collision.transform.GetComponent<PlayerMovement>();
+                }
+
+                if (_moveScript.IsUsingLadder && collision.transform.position.x != transform.position.x)
+                {
+                    var newPosition = collision.transform.position;
+                    newPosition.x = transform.position.x;
+                    collision.transform.position = newPosition;
+                }
+            }
+        }
+
         private void OnTriggerExit2D(Collider2D collision)
         {
             if (collision.gameObject.CompareTag("Player"))
