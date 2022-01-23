@@ -23,7 +23,7 @@ namespace Game.Player
         // Properties
         public bool IsFacingRight { get; set; } = true;
 
-        public bool IsMoving { get; set; } = false;
+        public bool IsWalking { get; set; } = false;
         public bool CanUseLadder { get; set; } = false;
         public bool IsUsingLadder { get; set; } = false;
         public Vector2 ClimbDirection { get; set; } = Vector2.zero;
@@ -50,8 +50,9 @@ namespace Game.Player
             }
             else
             {
-                if (IsMoving)
+                if (IsWalking)
                 {
+                    Debug.Log("STOP");
                     StopMovement();
                 }
             }
@@ -60,7 +61,7 @@ namespace Game.Player
         public void StopMovement()
         {
             var command = _moveCommands
-                        .FirstOrDefault(command => command.GetType() == typeof(MoveLeftCommand) || command.GetType() == typeof(MoveRightCommand));
+                        .FirstOrDefault(command => command.GetType() == typeof(MoveLeftCommand));
 
             if (command != null)
             {

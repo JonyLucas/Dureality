@@ -21,7 +21,7 @@ namespace Game.Commands.Movement
 
         protected override bool ExecutionCodition(GameObject gameObject)
         {
-            return moveScript.CanUseLadder && !moveScript.IsMoving && moveScript.ClimbDirection != Vector2.up;
+            return moveScript.CanUseLadder && !moveScript.IsWalking && moveScript.ClimbDirection != Vector2.up;
         }
 
         public override void FinalizeAction(GameObject gameObject)

@@ -87,6 +87,7 @@
     <Compile Include="Assets\Scripts\Commands\Movement\BaseMoveCommand.cs" />
     <Compile Include="Assets\Scripts\Commands\Movement\MoveRightCommand.cs" />
     <Compile Include="Assets\Scripts\Extensions\AnimatorExtension.cs" />
+    <Compile Include="Assets\Scripts\Commands\Movement\WalkingCommand.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
