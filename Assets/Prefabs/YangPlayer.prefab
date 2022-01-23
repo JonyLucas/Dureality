@@ -181,3 +181,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _playerDeathEvent: {fileID: 11400000, guid: 9bdc670390bcf264e89f8f081618ce6a, type: 2}
+  _deathAnimationName: yang_death
