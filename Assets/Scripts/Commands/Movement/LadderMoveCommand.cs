@@ -20,7 +20,7 @@ namespace Game.Commands.Movement
             moveScript.StopMovement();
             rigidbody.bodyType = RigidbodyType2D.Kinematic;
             gameObject.transform.Translate(MoveDirection * speed * Time.fixedDeltaTime);
-            //animator.SetBool(AnimationParameter, true);
+            animator.SetBool(AnimationParameter, true);
         }
 
         protected override bool ExecutionCodition(GameObject gameObject)
@@ -32,6 +32,7 @@ namespace Game.Commands.Movement
         {
             moveScript.IsUsingLadder = false;
             rigidbody.bodyType = RigidbodyType2D.Dynamic;
+            animator.SetBool(AnimationParameter, false);
         }
     }
 }

@@ -20,6 +20,7 @@ namespace Game.Player
         private float _xLimit = 0.2f;
 
         private List<BaseMoveCommand> _moveCommands;
+        private Animator _animator;
 
         // Properties
 
@@ -34,6 +35,7 @@ namespace Game.Player
 
         private void Start()
         {
+            _animator = GetComponent<Animator>();
             _moveCommands = !_isReverse ? _control.MoveCommands : _control.ReverseCommands;
             _moveCommands.ForEach(command => command.InitializeFields(gameObject));
         }
@@ -46,6 +48,7 @@ namespace Game.Player
 
                 if (command != null)
                 {
+                    _animator.speed = 1;
                     command.Execute(gameObject);
                 }
             }
@@ -54,6 +57,11 @@ namespace Game.Player
                 if (IsWalking)
                 {
                     StopMovement();
+                }
+
+                if (IsUsingLadder)
+                {
+                    _animator.speed = 0;
                 }
             }
         }
