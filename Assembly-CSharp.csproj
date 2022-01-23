@@ -46,49 +46,6 @@
     <ImplicitlyExpandNETStandardFacades>false</ImplicitlyExpandNETStandardFacades>
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
-  <PropertyGroup>
-    <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
-    <UnityProjectGenerator>Package</UnityProjectGenerator>
-    <UnityProjectGeneratorVersion>2.0.14</UnityProjectGeneratorVersion>
-    <UnityProjectType>Game:1</UnityProjectType>
-    <UnityBuildTarget>StandaloneWindows64:19</UnityBuildTarget>
-    <UnityVersion>2020.3.24f1</UnityVersion>
-  </PropertyGroup>
-  <ItemGroup>
-    <Analyzer Include="D:\Arquivos de Programas\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="Assets\Scripts\Player\PlayerMovement.cs" />
-    <Compile Include="Assets\Scripts\Factories\MoveCommandFactory.cs" />
-    <Compile Include="Assets\Scripts\Commands\Movement\ClimbingCommand.cs" />
-    <Compile Include="Assets\Scripts\Commands\Movement\MoveLeftCommand.cs" />
-    <Compile Include="Assets\Scripts\Commands\Movement\DescendingCommand.cs" />
-    <Compile Include="Assets\Scripts\UI\ChangeAssociatedKey.cs" />
-    <Compile Include="Assets\Scripts\Props\BlockAnimation.cs" />
-    <Compile Include="Assets\Scripts\UI\CollectableCounter.cs" />
-    <Compile Include="Assets\Scripts\Props\SpikesBehaviour.cs" />
-    <Compile Include="Assets\Scripts\Enums\MoveCommandType.cs" />
-    <Compile Include="Assets\Scripts\Props\Objective\ObjectiveAnimation.cs" />
-    <Compile Include="Assets\Scripts\Player\PlayerControl.cs" />
-    <Compile Include="Assets\Scripts\Observers\Listeners\BoolEventListener.cs" />
-    <Compile Include="Assets\Scripts\Observers\Listeners\IntEventListener.cs" />
-    <Compile Include="Assets\Scripts\Observers\Listeners\GenericEventListener.cs" />
-    <Compile Include="Assets\Scripts\Observers\Listeners\EventListener.cs" />
-    <Compile Include="Assets\Scripts\Props\Collectables\CollectableBehaviour.cs" />
-    <Compile Include="Assets\Scripts\Observers\Events\BoolGameEvent.cs" />
-    <Compile Include="Assets\Scripts\Props\Collectables\CollectableAnimations.cs" />
-    <Compile Include="Assets\Scripts\Props\LaddersBehaviour.cs" />
-    <Compile Include="Assets\Scripts\Commands\BaseCommand.cs" />
-    <Compile Include="Assets\Scripts\Observers\Events\GenericGameEvent.cs" />
-    <Compile Include="Assets\Scripts\Player\PlayerHealth.cs" />
-    <Compile Include="Assets\Scripts\Observers\Events\IntGameEvent.cs" />
-    <Compile Include="Assets\Scripts\Observers\Events\GameEvent.cs" />
-    <Compile Include="Assets\Scripts\Commands\Movement\BaseMoveCommand.cs" />
-    <Compile Include="Assets\Scripts\Commands\Movement\MoveRightCommand.cs" />
-    <Compile Include="Assets\Scripts\Extensions\VectorExtension.cs" />
-    <Compile Include="Assets\Scripts\UI\ChangeSceneScript.cs" />
-    <Compile Include="Assets\Scripts\Props\Objective\ObjectiveBehaviour.cs" />
-  </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\Player\PlayerMovement.cs" />
      <Compile Include="Assets\Scripts\Factories\MoveCommandFactory.cs" />
@@ -96,11 +53,12 @@
      <Compile Include="Assets\Scripts\Commands\Movement\MoveLeftCommand.cs" />
      <Compile Include="Assets\Scripts\Commands\Movement\DescendingCommand.cs" />
      <Compile Include="Assets\Scripts\UI\ChangeAssociatedKey.cs" />
+     <Compile Include="Assets\Scripts\UI\ChangeSceneScript.cs" />
      <Compile Include="Assets\Scripts\Props\BlockAnimation.cs" />
      <Compile Include="Assets\Scripts\UI\CollectableCounter.cs" />
      <Compile Include="Assets\Scripts\Props\SpikesBehaviour.cs" />
      <Compile Include="Assets\Scripts\Enums\MoveCommandType.cs" />
-     <Compile Include="Assets\Scripts\Props\ObjectiveAnimation.cs" />
+     <Compile Include="Assets\Scripts\Props\Objective\ObjectiveAnimation.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerControl.cs" />
      <Compile Include="Assets\Scripts\Observers\Listeners\BoolEventListener.cs" />
      <Compile Include="Assets\Scripts\Observers\Listeners\IntEventListener.cs" />
@@ -111,9 +69,11 @@
      <Compile Include="Assets\Scripts\Props\Collectables\CollectableAnimations.cs" />
      <Compile Include="Assets\Scripts\Props\LaddersBehaviour.cs" />
      <Compile Include="Assets\Scripts\Commands\BaseCommand.cs" />
+     <Compile Include="Assets\Scripts\Extensions\VectorExtension.cs" />
      <Compile Include="Assets\Scripts\Observers\Events\GenericGameEvent.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerHealth.cs" />
      <Compile Include="Assets\Scripts\Observers\Events\IntGameEvent.cs" />
+     <Compile Include="Assets\Scripts\Props\Objective\ObjectiveBehaviour.cs" />
      <Compile Include="Assets\Scripts\Observers\Events\GameEvent.cs" />
      <Compile Include="Assets\Scripts\Commands\Movement\BaseMoveCommand.cs" />
      <Compile Include="Assets\Scripts\Commands\Movement\MoveRightCommand.cs" />
