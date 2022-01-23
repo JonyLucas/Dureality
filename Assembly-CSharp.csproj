@@ -72,6 +72,7 @@
     <Compile Include="Assets\Scripts\Player\PlayerControl.cs" />
     <Compile Include="Assets\Scripts\Observers\Listeners\BoolEventListener.cs" />
     <Compile Include="Assets\Scripts\Observers\Listeners\IntEventListener.cs" />
+    <Compile Include="Assets\Scripts\Commands\Movement\LadderMoveCommand.cs" />
     <Compile Include="Assets\Scripts\Observers\Listeners\GenericEventListener.cs" />
     <Compile Include="Assets\Scripts\Observers\Listeners\EventListener.cs" />
     <Compile Include="Assets\Scripts\Props\Collectables\CollectableBehaviour.cs" />
@@ -88,7 +89,6 @@
     <Compile Include="Assets\Scripts\Observers\Events\GameEvent.cs" />
     <Compile Include="Assets\Scripts\Commands\Movement\BaseMoveCommand.cs" />
     <Compile Include="Assets\Scripts\Commands\Movement\MoveRightCommand.cs" />
-    <Compile Include="Assets\Scripts\Commands\Movement\LadderMoveCommand.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
