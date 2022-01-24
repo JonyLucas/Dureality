@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e21fa8d156e3fe141baa4abf963b6fa8, type: 3}
+  m_Name: Prologue
+  m_EditorClassIdentifier: 
+  _frames:
+  - _image: {fileID: 0}
+    _text: In a high hill on the east, monks who were about to become masters meditated
+      to learn to find balance between their yin and yang.
+  - _image: {fileID: 0}
+    _text: But two immature monks refused to understand the need for the equilibrium,
+      then their yin and yang became imbalanced thus not having correctly completed
+      your training .
+  - _image: {fileID: 0}
+    _text: As punishment, their masters ordered them to go on a journey, seeking
+      to understand the importance of balance and bring it to their bodies and minds.

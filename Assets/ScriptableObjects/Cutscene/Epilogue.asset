@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e21fa8d156e3fe141baa4abf963b6fa8, type: 3}
+  m_Name: Epilogue
+  m_EditorClassIdentifier: 
+  _frames:
+  - _image: {fileID: 0}
+    _text: With their mind and bodies finally in balance, the two monks returned
+      to the monastery on the hill.
+  - _image: {fileID: 0}
+    _text: There they shared and taught their new knowledge and wisdom to their new
+      disciples.
+  - _image: {fileID: 0}
+    _text: And they spent the rest of their lives on the search for eternal balance.

@@ -89,6 +89,10 @@
     <Compile Include="Assets\Scripts\Observers\Events\GameEvent.cs" />
     <Compile Include="Assets\Scripts\Commands\Movement\BaseMoveCommand.cs" />
     <Compile Include="Assets\Scripts\Commands\Movement\MoveRightCommand.cs" />
+    <Compile Include="Assets\Scripts\UI\Cutscenes\CutsceneFrame.cs" />
+    <Compile Include="Assets\Scripts\UI\Cutscenes\Frame.cs" />
+    <Compile Include="Assets\Scripts\UI\Cutscenes\CutsceneBehaviour.cs" />
+    <Compile Include="Assets\Scripts\UI\Cutscenes\TypewriterEffect.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
