@@ -95,6 +95,9 @@
     <Compile Include="Assets\Scripts\Commands\Movement\MoveRightCommand.cs" />
     <Compile Include="Assets\Scripts\Props\LeversBehaviour.cs" />
     <Compile Include="Assets\Scripts\Commands\KeylessBaseCommand.cs" />
+    <Compile Include="Assets\Scripts\Commands\Plaftform\MovePlatform.cs" />
+    <Compile Include="Assets\Scripts\Commands\Plaftform\RotatePlatform.cs" />
+    <Compile Include="Assets\Scripts\Commands\Plaftform\DestroyPlatform.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
