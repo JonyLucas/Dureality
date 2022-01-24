@@ -137,7 +137,7 @@ GameObject:
   - component: {fileID: 47300670}
   - component: {fileID: 47300671}
   m_Layer: 5
-  m_Name: Panel
+  m_Name: ProloguePanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
