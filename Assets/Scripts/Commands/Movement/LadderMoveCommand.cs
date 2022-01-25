@@ -18,9 +18,9 @@ namespace Game.Commands.Movement
         {
             moveScript.IsUsingLadder = true;
             moveScript.StopMovement();
+            animator.SetBool(AnimationParameter, true);
             rigidbody.bodyType = RigidbodyType2D.Kinematic;
             gameObject.transform.Translate(MoveDirection * speed * Time.fixedDeltaTime);
-            animator.SetBool(AnimationParameter, true);
         }
 
         protected override bool ExecutionCodition(GameObject gameObject)

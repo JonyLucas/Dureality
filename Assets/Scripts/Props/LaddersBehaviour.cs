@@ -38,7 +38,7 @@ namespace Game.Props
         private IEnumerator StopClimbingCoroutine()
         {
             _moveScript.CanUseLadder = false;
-            yield return new WaitForSeconds(0.5f);
+            yield return new WaitForSeconds(0.1f);
             _moveScript.CanUseLadder = true;
         }
 
@@ -55,6 +55,7 @@ namespace Game.Props
                 {
                     var newPosition = collision.transform.position;
                     newPosition.x = transform.position.x;
+                    newPosition.y += _ladderDirection.GetProminentVectorComponent() == Vector2.down ? 0.1f : -0.1f;
                     collision.transform.position = newPosition;
                 }
             }
@@ -71,7 +72,7 @@ namespace Game.Props
 
                 _moveScript.ClimbDirection = Vector2.zero;
 
-                if (!_moveScript.IsUsingLadder)
+                if (!_moveScript.IsUsingLadder || _moveScript.IsWalking)
                 {
                     _moveScript.CanUseLadder = false;
                 }

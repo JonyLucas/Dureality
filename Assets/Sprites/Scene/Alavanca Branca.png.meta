@@ -1,31 +1,16 @@
 fileFormatVersion: 2
-guid: 7c25eac6175842c498221e6a23617a8c
+guid: cce4116bdd8ceb544bf569c440d6cebb
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4454671056589414342
-    second: muse_Yin_0
+      213: 2075549714295037040
+    second: Alavanca Branca_0
   - first:
-      213: -7487486681823512328
-    second: muse_Yin_1
+      213: 5374857136730286024
+    second: Alavanca Branca_1
   - first:
-      213: -1430339027729948309
-    second: muse_Yin_2
-  - first:
-      213: 3520472414649618325
-    second: muse_Yin_3
-  - first:
-      213: 659105084850878937
-    second: muse_Yin_4
-  - first:
-      213: 2757350291668822459
-    second: muse_Yin_5
-  - first:
-      213: -4942771848504431465
-    second: muse_Yin_6
-  - first:
-      213: -3113976000766378896
-    second: muse_Yin_7
+      213: -5734992113283485934
+    second: Alavanca Branca_2
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -67,7 +52,7 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 1
+  spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 64
@@ -139,133 +124,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: muse_Yin_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 128
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a3026c0a644dd22c0800000000000000
-      internalID: -4454671056589414342
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: muse_Yin_1
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 128
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8f8f075888a171890800000000000000
-      internalID: -7487486681823512328
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: muse_Yin_2
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 128
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b6167c78b3a662ce0800000000000000
-      internalID: -1430339027729948309
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: muse_Yin_3
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 64
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 59f80c4420b3bd030800000000000000
-      internalID: 3520472414649618325
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: muse_Yin_4
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 64
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9d9b034259c952900800000000000000
-      internalID: 659105084850878937
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: muse_Yin_5
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 64
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bb96d303b73144620800000000000000
-      internalID: 2757350291668822459
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: muse_Yin_6
+      name: Alavanca Branca_0
       rect:
         serializedVersion: 2
         x: 0
@@ -279,14 +138,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 79ca714113fb76bb0800000000000000
-      internalID: -4942771848504431465
+      spriteID: 07c183ae775ddcc10800000000000000
+      internalID: 2075549714295037040
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: muse_Yin_7
+      name: Alavanca Branca_1
       rect:
         serializedVersion: 2
         x: 64
@@ -300,8 +159,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 07c7a3b635fe8c4d0800000000000000
-      internalID: -3113976000766378896
+      spriteID: 8c72841b614579a40800000000000000
+      internalID: 5374857136730286024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alavanca Branca_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21f221aee073960b0800000000000000
+      internalID: -5734992113283485934
       vertices: []
       indices: 
       edges: []
