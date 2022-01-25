@@ -67,7 +67,7 @@
     <Compile Include="Assets\Scripts\UI\ChangeSceneScript.cs" />
     <Compile Include="Assets\Scripts\Props\BlockAnimation.cs" />
     <Compile Include="Assets\Scripts\UI\CollectableCounter.cs" />
-    <Compile Include="Assets\Scripts\Props\SpikesBehaviour.cs" />
+    <Compile Include="Assets\Scripts\Props\HazardsBehaviour.cs" />
     <Compile Include="Assets\Scripts\Commands\KeylessBaseCommand.cs" />
     <Compile Include="Assets\Scripts\Enums\MoveCommandType.cs" />
     <Compile Include="Assets\Scripts\Props\Objective\ObjectiveAnimation.cs" />
@@ -91,13 +91,13 @@
     <Compile Include="Assets\Scripts\Observers\Events\IntGameEvent.cs" />
     <Compile Include="Assets\Scripts\Commands\Movement\WalkingCommand.cs" />
     <Compile Include="Assets\Scripts\Props\Objective\ObjectiveBehaviour.cs" />
+    <Compile Include="Assets\Scripts\Commands\Plaftform\RotatePlatformCommand.cs" />
     <Compile Include="Assets\Scripts\Observers\Events\GameEvent.cs" />
     <Compile Include="Assets\Scripts\UI\Cutscenes\CutsceneFrame.cs" />
     <Compile Include="Assets\Scripts\Commands\Movement\BaseMoveCommand.cs" />
     <Compile Include="Assets\Scripts\UI\Cutscenes\TypewriterEffect.cs" />
     <Compile Include="Assets\Scripts\Commands\Plaftform\DestroyPlatformCommand.cs" />
     <Compile Include="Assets\Scripts\Commands\Movement\MoveRightCommand.cs" />
-    <Compile Include="Assets\Scripts\Commands\Plaftform\RotatePlatformCommand.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
