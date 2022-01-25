@@ -15,7 +15,7 @@ namespace Game.Commands.Platform
 
         public override async void Execute()
         {
-            if (associatedObject == null)
+            if (associatedObject == null || _rotationRate <= 0)
             {
                 return;
             }

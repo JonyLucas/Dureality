@@ -14,9 +14,12 @@ namespace Game.Commands.Platform
         [SerializeField]
         private float _moveRate = 0.2f;
 
+        [SerializeField]
+        private float _speed = 1;
+
         public override async void Execute()
         {
-            if (associatedObject == null)
+            if (associatedObject == null || _moveRate <= 0)
             {
                 return;
             }
@@ -30,18 +33,23 @@ namespace Game.Commands.Platform
 
             while (distance.magnitude > 0 && Application.isPlaying)
             {
-                await Task.Delay((int)delay);
-                distance.GetProminentVectorComponent();
-                associatedObject.transform.position += distance * _moveRate;
-
-                currentPosition = associatedObject.transform.position;
-                distance = _destinationPosition - currentPosition;
-
-                if (distance.magnitude < _moveRate)
+                if (distance.magnitude < _moveRate || _speed == 0)
                 {
                     associatedObject.transform.position = _destinationPosition;
                     break;
                 }
+
+                await Task.Delay((int)delay);
+
+                if (associatedObject == null)
+                {
+                    return;
+                }
+
+                associatedObject.transform.position += distance.GetProminentVectorComponent() * _speed;
+
+                currentPosition = associatedObject.transform.position;
+                distance = _destinationPosition - currentPosition;
             }
 
             currentPosition = associatedObject.transform.position;
