@@ -16,7 +16,7 @@ namespace Game.Commands.Platform
 
         public override async void Execute()
         {
-            var delay = _moveRate * 1000;
+            var delay = _moveRate * 500;
             var currentPosition = associatedObject.transform.position;
             var originalPosition = currentPosition;
 
@@ -34,11 +34,13 @@ namespace Game.Commands.Platform
 
                 if (distance.magnitude < _moveRate)
                 {
+                    Debug.Log("BREAK");
                     associatedObject.transform.position = _destinationPosition;
                     break;
                 }
             }
 
+            currentPosition = associatedObject.transform.position;
             if (currentPosition != _destinationPosition)
             {
                 associatedObject.transform.position = originalPosition;
