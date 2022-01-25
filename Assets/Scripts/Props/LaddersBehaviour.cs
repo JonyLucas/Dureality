@@ -55,6 +55,7 @@ namespace Game.Props
                 {
                     var newPosition = collision.transform.position;
                     newPosition.x = transform.position.x;
+                    newPosition.y += _ladderDirection.GetProminentVectorComponent() == Vector2.down ? 0.1f : -0.1f;
                     collision.transform.position = newPosition;
                 }
             }
