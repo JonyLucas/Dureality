@@ -59,6 +59,7 @@
     <Compile Include="Assets\Scripts\Player\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\Factories\MoveCommandFactory.cs" />
     <Compile Include="Assets\Scripts\Extensions\AnimatorExtension.cs" />
+    <Compile Include="Assets\Scripts\Props\LeversBehaviour.cs" />
     <Compile Include="Assets\Scripts\Commands\Movement\ClimbingCommand.cs" />
     <Compile Include="Assets\Scripts\Commands\Movement\MoveLeftCommand.cs" />
     <Compile Include="Assets\Scripts\Commands\Movement\DescendingCommand.cs" />
@@ -67,6 +68,7 @@
     <Compile Include="Assets\Scripts\Props\BlockAnimation.cs" />
     <Compile Include="Assets\Scripts\UI\CollectableCounter.cs" />
     <Compile Include="Assets\Scripts\Props\SpikesBehaviour.cs" />
+    <Compile Include="Assets\Scripts\Commands\KeylessBaseCommand.cs" />
     <Compile Include="Assets\Scripts\Enums\MoveCommandType.cs" />
     <Compile Include="Assets\Scripts\Props\Objective\ObjectiveAnimation.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerControl.cs" />
@@ -74,6 +76,7 @@
     <Compile Include="Assets\Scripts\Observers\Listeners\IntEventListener.cs" />
     <Compile Include="Assets\Scripts\Commands\Movement\LadderMoveCommand.cs" />
     <Compile Include="Assets\Scripts\Observers\Listeners\GenericEventListener.cs" />
+    <Compile Include="Assets\Scripts\Commands\Plaftform\MovePlatformCommand.cs" />
     <Compile Include="Assets\Scripts\Observers\Listeners\EventListener.cs" />
     <Compile Include="Assets\Scripts\Props\Collectables\CollectableBehaviour.cs" />
     <Compile Include="Assets\Scripts\Observers\Events\BoolGameEvent.cs" />
@@ -92,12 +95,9 @@
     <Compile Include="Assets\Scripts\UI\Cutscenes\CutsceneFrame.cs" />
     <Compile Include="Assets\Scripts\Commands\Movement\BaseMoveCommand.cs" />
     <Compile Include="Assets\Scripts\UI\Cutscenes\TypewriterEffect.cs" />
+    <Compile Include="Assets\Scripts\Commands\Plaftform\DestroyPlatformCommand.cs" />
     <Compile Include="Assets\Scripts\Commands\Movement\MoveRightCommand.cs" />
-    <Compile Include="Assets\Scripts\Props\LeversBehaviour.cs" />
-    <Compile Include="Assets\Scripts\Commands\KeylessBaseCommand.cs" />
-    <Compile Include="Assets\Scripts\Commands\Plaftform\MovePlatform.cs" />
-    <Compile Include="Assets\Scripts\Commands\Plaftform\RotatePlatform.cs" />
-    <Compile Include="Assets\Scripts\Commands\Plaftform\DestroyPlatform.cs" />
+    <Compile Include="Assets\Scripts\Commands\Plaftform\RotatePlatformCommand.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

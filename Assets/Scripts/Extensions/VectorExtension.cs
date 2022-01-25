@@ -25,5 +25,18 @@ namespace Game.Extensions
                 return vector.y > 0 ? Vector2.up : Vector2.down;
             }
         }
+
+        public static Vector3 GetProminentVectorComponent(this Vector3 vector)
+        {
+            vector = vector.normalized;
+            if (Mathf.Abs(vector.x) > Mathf.Abs(vector.y))
+            {
+                return vector.x > 0 ? Vector2.right : Vector2.left;
+            }
+            else
+            {
+                return vector.y > 0 ? Vector2.up : Vector2.down;
+            }
+        }
     }
 }
