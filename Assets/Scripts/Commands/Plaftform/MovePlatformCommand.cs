@@ -17,7 +17,7 @@ namespace Game.Commands.Platform
         private Vector3 _auxDestinationPosition;
         private Vector3 _originalPosition;
 
-        public override async void Execute()
+        public override async Task Execute()
         {
             if (associatedObject == null || _moveRate <= 0)
             {

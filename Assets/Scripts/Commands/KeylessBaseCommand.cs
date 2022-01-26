@@ -1,4 +1,5 @@
 using System;
+using System.Threading.Tasks;
 using UnityEngine;
 
 namespace Game.Commands
@@ -9,6 +10,6 @@ namespace Game.Commands
         [SerializeField]
         protected GameObject associatedObject;
 
-        public abstract void Execute();
+        public abstract Task Execute();
     }
 }

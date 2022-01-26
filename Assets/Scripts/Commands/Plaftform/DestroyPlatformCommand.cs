@@ -1,4 +1,5 @@
 using System;
+using System.Threading.Tasks;
 using UnityEngine;
 
 namespace Game.Commands.Platform
@@ -9,7 +10,7 @@ namespace Game.Commands.Platform
         [SerializeField]
         private GameObject _destructiveObject;
 
-        public override void Execute()
+        public override Task Execute()
         {
             throw new System.NotImplementedException();
         }

@@ -13,7 +13,7 @@ namespace Game.Commands.Platform
         [SerializeField]
         private float _rotationRate = 0.1f;
 
-        public override async void Execute()
+        public override async Task Execute()
         {
             if (associatedObject == null || _rotationRate <= 0)
             {
