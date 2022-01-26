@@ -13,13 +13,13 @@ MonoBehaviour:
   m_Name: Prologue
   m_EditorClassIdentifier: 
   _frames:
-  - _image: {fileID: 0}
+  - _image: {fileID: 21300000, guid: 48d1eb91268ea814fbb46138316d3718, type: 3}
     _text: In a high hill on the east, monks who were about to become masters meditated
       to learn to find balance between their yin and yang.
-  - _image: {fileID: 0}
+  - _image: {fileID: 21300000, guid: d3d933ad92fb68f47996cc8dd747ef3d, type: 3}
     _text: But two immature monks refused to understand the need for the equilibrium,
       then their yin and yang became imbalanced thus not having correctly completed
       your training .
-  - _image: {fileID: 0}
+  - _image: {fileID: 21300000, guid: 63cf127f5d407b640a4898ca9afd91bf, type: 3}
     _text: As punishment, their masters ordered them to go on a journey, seeking
       to understand the importance of balance and bring it to their bodies and minds.

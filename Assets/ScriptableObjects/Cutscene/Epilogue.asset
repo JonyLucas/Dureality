@@ -13,13 +13,13 @@ MonoBehaviour:
   m_Name: Epilogue
   m_EditorClassIdentifier: 
   _frames:
-  - _image: {fileID: 0}
+  - _image: {fileID: 21300000, guid: 68ced91922cb82840a9afec68d85a680, type: 3}
     _text: With their mind and bodies finally in balance, the two monks returned
       to the monastery on the hill.
-  - _image: {fileID: 0}
+  - _image: {fileID: 21300000, guid: e7881edf401870e4b9d2f988a8dbf4aa, type: 3}
     _text: There they shared and taught their new knowledge and wisdom to their new
       disciples.
-  - _image: {fileID: 0}
+  - _image: {fileID: 21300000, guid: 97db6c0f17b5eac46b840f7a3fa2ea21, type: 3}
     _text: And they spent the rest of their lives on the search for eternal balance.
   - _image: {fileID: 0}
     _text: Thank you for playing!
