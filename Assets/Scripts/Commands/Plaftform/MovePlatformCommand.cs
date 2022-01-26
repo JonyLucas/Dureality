@@ -14,8 +14,8 @@ namespace Game.Commands.Platform
         [SerializeField]
         private float _moveRate = 0.2f;
 
-        [SerializeField]
-        private float _speed = 1;
+        private Vector3 _auxDestinationPosition;
+        private Vector3 _originalPosition;
 
         public override async void Execute()
         {
@@ -24,18 +24,24 @@ namespace Game.Commands.Platform
                 return;
             }
 
+            // Initialize variables
             var delay = _moveRate * 500;
             var currentPosition = associatedObject.transform.position;
-            var originalPosition = currentPosition;
+            _originalPosition = currentPosition;
 
-            _destinationPosition.z = currentPosition.z;
-            var distance = _destinationPosition - currentPosition;
+            if (_auxDestinationPosition == default)
+            {
+                _auxDestinationPosition = _destinationPosition;
+                _auxDestinationPosition.z = currentPosition.z;
+            }
+            var distance = _auxDestinationPosition - currentPosition;
 
+            // Translate
             while (distance.magnitude > 0 && Application.isPlaying)
             {
-                if (distance.magnitude < _moveRate || _speed == 0)
+                if (distance.magnitude < _moveRate || _moveRate == 0)
                 {
-                    associatedObject.transform.position = _destinationPosition;
+                    associatedObject.transform.position = _auxDestinationPosition;
                     break;
                 }
 
@@ -46,17 +52,22 @@ namespace Game.Commands.Platform
                     return;
                 }
 
-                associatedObject.transform.position += distance.GetProminentVectorComponent() * _speed;
+                associatedObject.transform.position += distance.GetProminentVectorComponent() * _moveRate;
 
                 currentPosition = associatedObject.transform.position;
-                distance = _destinationPosition - currentPosition;
+                distance = _auxDestinationPosition - currentPosition;
             }
 
             currentPosition = associatedObject.transform.position;
-            if (currentPosition != _destinationPosition)
+            if (currentPosition != _auxDestinationPosition)
             {
-                associatedObject.transform.position = originalPosition;
+                associatedObject.transform.position = _originalPosition;
             }
+
+            // Swaps positions for reverse execution
+            var swap = _destinationPosition;
+            _auxDestinationPosition = _originalPosition;
+            _originalPosition = swap;
         }
     }
 }

@@ -29,10 +29,11 @@ namespace Game.Props
         {
             if (collision.transform.CompareTag("Player"))
             {
-                _moveCommands.ForEach(command => command.Execute());
-                _rotateCommands.ForEach(command => command.Execute());
                 _isActive = !_isActive;
                 _animator.SetBool("isActive", _isActive);
+
+                _moveCommands.ForEach(command => command.Execute());
+                _rotateCommands.ForEach(command => command.Execute());
 
                 if (_runOnce)
                 {
