@@ -25,21 +25,35 @@ namespace Game.Commands.Platform
             var originalRotation = currentRotation;
 
             var distance = _rotation - currentRotation.eulerAngles.z;
+            var rotationDirection = _rotation > 0 ? Vector3.forward : Vector3.back;
 
-            while (distance > 0 && Application.isPlaying)
+            while (Mathf.Abs(distance) > 0 && Application.isPlaying)
             {
                 await Task.Delay((int)delay);
 
-                associatedObject.transform.Rotate(Vector3.forward);
+                if (associatedObject == null)
+                {
+                    return;
+                }
+
+                associatedObject.transform.Rotate(rotationDirection);
                 currentRotation = associatedObject.transform.rotation;
-                distance = _rotation - currentRotation.eulerAngles.z;
+                distance = (float)Math.Round(_rotation - currentRotation.eulerAngles.z);
+                Debug.Log(distance);
             }
 
+            // round the z angle to prevent unintentional behaviour
             currentRotation = associatedObject.transform.rotation;
-            if (currentRotation.eulerAngles.z != _rotation)
+            var roundedZangle = (float)Math.Round(currentRotation.eulerAngles.z);
+            associatedObject.transform.eulerAngles = new Vector3(currentRotation.x, currentRotation.y, roundedZangle);
+            currentRotation = associatedObject.transform.rotation;
+
+            if (roundedZangle != _rotation)
             {
                 associatedObject.transform.rotation = originalRotation;
             }
+
+            _rotation = originalRotation.eulerAngles.z;
         }
     }
 }
