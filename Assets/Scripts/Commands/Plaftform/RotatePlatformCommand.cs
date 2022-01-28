@@ -39,14 +39,12 @@ namespace Game.Commands.Platform
                 associatedObject.transform.Rotate(rotationDirection);
                 currentRotation = associatedObject.transform.rotation;
                 distance = (float)Math.Round(_rotation - currentRotation.eulerAngles.z);
-                Debug.Log(distance);
             }
 
             // round the z angle to prevent unintentional behaviour
             currentRotation = associatedObject.transform.rotation;
             var roundedZangle = (float)Math.Round(currentRotation.eulerAngles.z);
             associatedObject.transform.eulerAngles = new Vector3(currentRotation.x, currentRotation.y, roundedZangle);
-            currentRotation = associatedObject.transform.rotation;
 
             if (roundedZangle != _rotation)
             {
