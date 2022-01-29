@@ -485,7 +485,7 @@ GameObject:
   - component: {fileID: 8957314597757839537}
   m_Layer: 5
   m_Name: AudioManager
-  m_TagString: Untagged
+  m_TagString: AudioManager
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -523,11 +523,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _sounds:
   - _clip: {fileID: 8300000, guid: 57419d7220d081d4095e64c73ddbdc21, type: 3}
+    _pitch: 1
   - _clip: {fileID: 8300000, guid: 5c2a6ddeeb557054dbcec27bcd106ac5, type: 3}
+    _pitch: 1
   - _clip: {fileID: 8300000, guid: e0d0612891f5f7b4eacf99560775a1d6, type: 3}
+    _pitch: 1
   - _clip: {fileID: 8300000, guid: 886add5e62fa00d448b569374f3e796f, type: 3}
+    _pitch: 1
   - _clip: {fileID: 8300000, guid: 55b9c515f28570d47b87eecd519b9342, type: 3}
+    _pitch: 1
   - _clip: {fileID: 8300000, guid: c04d4df456881f84495f957c335975fb, type: 3}
+    _pitch: 0.8
   _volumeFX: {fileID: 6218873123991659175}
   _volumeMusic: {fileID: 6193681709770572644}
   _backgroundMusicClip: {fileID: 0}
