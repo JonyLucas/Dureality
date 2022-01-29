@@ -15,6 +15,9 @@ namespace Game.Props
         private List<RotatePlatformCommand> _rotateCommands;
 
         [SerializeField]
+        private List<DestroyPlatformCommand> _destroyCommands;
+
+        [SerializeField]
         private bool _runOnce = false;
 
         private Collider2D _collider;
@@ -48,6 +51,7 @@ namespace Game.Props
 
                 _moveCommands.ForEach(command => _tasks.Add(command.Execute()));
                 _rotateCommands.ForEach(command => _tasks.Add(command.Execute()));
+                _destroyCommands.ForEach(command => _tasks.Add(command.Execute()));
 
                 if (_audioManager != null)
                 {

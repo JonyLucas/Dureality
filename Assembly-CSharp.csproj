@@ -103,6 +103,7 @@
     <Compile Include="Assets\Scripts\Commands\Plaftform\DestroyPlatformCommand.cs" />
     <Compile Include="Assets\Scripts\Commands\Movement\MoveRightCommand.cs" />
     <Compile Include="Assets\Scripts\UI\ControlMapping\UpdateKeysOnEnable.cs" />
+    <Compile Include="Assets\Scripts\Props\BreakingFloorBehaviour.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

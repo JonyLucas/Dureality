@@ -2129,7 +2129,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Press any key to map the command. \n\n(Except [ESC] key)"
+  m_Text: "Press any key to map the command. \n\n([ESC] to cancel)"
 --- !u!222 &814808919
 CanvasRenderer:
   m_ObjectHideFlags: 0
