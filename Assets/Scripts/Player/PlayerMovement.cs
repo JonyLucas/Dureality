@@ -1,5 +1,6 @@
 using Game.Commands.Movement;
 using Game.Player.ScriptableObjects;
+using Game.UI;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
@@ -28,6 +29,7 @@ namespace Game.Player
         public bool IsWalking { get; set; } = false;
         public bool CanUseLadder { get; set; } = false;
         public bool IsUsingLadder { get; set; } = false;
+        public bool IsPaused { get; set; }
         public Vector2 ClimbDirection { get; set; } = Vector2.zero;
 
         public float XLimit
@@ -38,11 +40,13 @@ namespace Game.Player
             _animator = GetComponent<Animator>();
             _moveCommands = !_isReverse ? _control.MoveCommands : _control.ReverseCommands;
             _moveCommands.ForEach(command => command.InitializeFields(gameObject));
+
+            PauseMenu.OpenWindowEvent += PauseMovement;
         }
 
         private void FixedUpdate()
         {
-            if (Input.anyKey)
+            if (Input.anyKey && !IsPaused)
             {
                 var command = _moveCommands.FirstOrDefault(command => Input.GetKey(command.AssociatedKey));
 
@@ -92,6 +96,16 @@ namespace Game.Player
         {
             StopMovement();
             enabled = false;
+        }
+
+        private void PauseMovement(bool isPaused)
+        {
+            IsPaused = isPaused;
+        }
+
+        private void OnDisable()
+        {
+            PauseMenu.OpenWindowEvent -= PauseMovement;
         }
     }
 }

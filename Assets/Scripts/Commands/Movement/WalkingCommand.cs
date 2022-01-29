@@ -28,7 +28,9 @@ namespace Game.Commands.Movement
         protected override bool ExecutionCodition(GameObject gameObject)
         {
             var xPosition = moveScript.transform.position.x;
-            return !moveScript.IsUsingLadder && Mathf.Abs(xPosition) >= Mathf.Abs(moveScript.XLimit);
+            return !moveScript.IsUsingLadder
+                && Mathf.Abs(xPosition) >= Mathf.Abs(moveScript.XLimit)
+                && !moveScript.IsPaused;
         }
 
         public override void FinalizeAction(GameObject gameObject)

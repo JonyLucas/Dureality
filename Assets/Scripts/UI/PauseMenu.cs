@@ -1,18 +1,23 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class PauseMenu : MonoBehaviour
+namespace Game.UI
 {
-    // Start is called before the first frame update
-    void Start()
+    public class PauseMenu : MonoBehaviour
     {
-        
-    }
+        public delegate void OpenWindow(bool isOpen);
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        public static event OpenWindow OpenWindowEvent;
+
+        private void OnEnable()
+        {
+            if (OpenWindowEvent != null)
+                OpenWindowEvent.Invoke(true);
+        }
+
+        private void OnDisable()
+        {
+            if (OpenWindowEvent != null)
+                OpenWindowEvent.Invoke(false);
+        }
     }
 }
