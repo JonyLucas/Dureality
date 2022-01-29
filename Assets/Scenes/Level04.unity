@@ -3737,6 +3737,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
       value: Level05
       objectReference: {fileID: 0}
+    - target: {fileID: 3293262738151169135, guid: 0a26e90c0433d7a4a82a2c27e6f9ca32, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: Level04
+      objectReference: {fileID: 0}
     - target: {fileID: 7943396193500478770, guid: 0a26e90c0433d7a4a82a2c27e6f9ca32, type: 3}
       propertyPath: m_Name
       value: UICanvas
