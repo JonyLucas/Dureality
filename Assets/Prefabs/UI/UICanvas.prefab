@@ -527,6 +527,7 @@ MonoBehaviour:
   - _clip: {fileID: 8300000, guid: e0d0612891f5f7b4eacf99560775a1d6, type: 3}
   - _clip: {fileID: 8300000, guid: 886add5e62fa00d448b569374f3e796f, type: 3}
   - _clip: {fileID: 8300000, guid: 55b9c515f28570d47b87eecd519b9342, type: 3}
+  - _clip: {fileID: 8300000, guid: c04d4df456881f84495f957c335975fb, type: 3}
   _volumeFX: {fileID: 6218873123991659175}
   _volumeMusic: {fileID: 6193681709770572644}
   _backgroundMusicClip: {fileID: 0}
@@ -2418,6 +2419,7 @@ GameObject:
   - component: {fileID: 7943396194358716063}
   - component: {fileID: 7943396194358716056}
   - component: {fileID: 532031679}
+  - component: {fileID: 345559969951593238}
   m_Layer: 5
   m_Name: WinPanel
   m_TagString: Untagged
@@ -2580,6 +2582,18 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &345559969951593238
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7943396194358716058}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c2b09e6e9cfd8c49813a874a78dfb67, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7943396194583621069
 GameObject:
   m_ObjectHideFlags: 0
