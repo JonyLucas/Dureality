@@ -17,6 +17,18 @@ namespace Game.Commands.Factories
         [SerializeField]
         private float _moveSpeed = 1;
 
+        public KeyCode AssociatedKey
+        {
+            get { return _associatedKey; }
+            set { _associatedKey = value; }
+        }
+
+        public MoveCommandType CommandType
+        {
+            get { return _commandType; }
+            set { _commandType = value; }
+        }
+
         public BaseMoveCommand Create(bool isReverse = false)
         {
             switch (_commandType)

@@ -1,3 +1,4 @@
+using Game.Enums;
 using Game.Player;
 using UnityEngine;
 
@@ -14,6 +15,7 @@ namespace Game.Commands.Movement
         protected PlayerMovement moveScript;
 
         public abstract string AnimationParameter { get; }
+        public abstract MoveCommandType CommandType { get; }
         protected bool isInitialized = false;
 
         protected BaseMoveCommand(KeyCode associatedKey, float speedValue) : base(associatedKey)
