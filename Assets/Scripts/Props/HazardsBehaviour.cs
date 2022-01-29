@@ -13,5 +13,14 @@ namespace Game.Props
                 healthScript.PlayerDeath();
             }
         }
+
+        private void OnTriggerEnter2D(Collider2D collision)
+        {
+            if (collision.transform.CompareTag("Player"))
+            {
+                var healthScript = collision.transform.GetComponent<PlayerHealth>();
+                healthScript.PlayerDeath();
+            }
+        }
     }
 }

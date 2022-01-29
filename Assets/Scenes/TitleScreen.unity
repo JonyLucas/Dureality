@@ -1611,18 +1611,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 20
+    m_Font: {fileID: 12800000, guid: 8305d19d96fba744fae8d0269b24cc5b, type: 3}
+    m_FontSize: 16
     m_FontStyle: 1
     m_BestFit: 0
-    m_MinSize: 2
+    m_MinSize: 0
     m_MaxSize: 40
     m_Alignment: 1
     m_AlignByGeometry: 0
@@ -1630,10 +1630,20 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 2.5
-  m_Text: "Daniel A. Sousa Henriques - Art Designer/Level Designer\nEsdras Filipe
-    B. da Silva - Narrative/Level Designer\nEdilson J. Gomes - Art Designer\nJo\xE3o
-    Lucas F. Amorim - Programmer/Level Designer\nPedro Furtado S. Madruga - Narrative/Level
-    Designer\nUlisses de O. Gomes - Music/Sound Fx"
+  m_Text: 'Daniel A. Sousa Henriques - Art Designer/Level Designer
+
+    Esdras Filipe
+    B. da Silva - Narrative/Level Designer
+
+    Edilson J. Gomes - Art Designer
+
+    Joao
+    Lucas F. Amorim - Programmer/Level Designer
+
+    Pedro Furtado S. Madruga - Narrative/Level
+    Designer
+
+    Ulisses de O. Gomes - Music/Sound Fx'
 --- !u!222 &815868358
 CanvasRenderer:
   m_ObjectHideFlags: 0
