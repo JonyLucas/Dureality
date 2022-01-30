@@ -83,6 +83,7 @@
     <Compile Include="Assets\Scripts\Observers\Listeners\EventListener.cs" />
     <Compile Include="Assets\Scripts\Props\Collectables\CollectableBehaviour.cs" />
     <Compile Include="Assets\Scripts\Observers\Events\BoolGameEvent.cs" />
+    <Compile Include="Assets\Scripts\Props\Ladders\OnLaddersDisable.cs" />
     <Compile Include="Assets\Scripts\UI\Cutscenes\CutsceneBehaviour.cs" />
     <Compile Include="Assets\Scripts\Audio\SoundFx.cs" />
     <Compile Include="Assets\Scripts\UI\Cutscenes\Frame.cs" />
@@ -104,7 +105,6 @@
     <Compile Include="Assets\Scripts\UI\Cutscenes\TypewriterEffect.cs" />
     <Compile Include="Assets\Scripts\Commands\Plaftform\DestroyPlatformCommand.cs" />
     <Compile Include="Assets\Scripts\Commands\Movement\MoveRightCommand.cs" />
-    <Compile Include="Assets\Scripts\Props\Ladders\OnLaddersDisable.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
