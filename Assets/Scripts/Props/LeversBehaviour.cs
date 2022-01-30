@@ -22,9 +22,10 @@ namespace Game.Props
 
         private Collider2D _collider;
         private Animator _animator;
+        private SpriteRenderer _renderer;
+        private AudioManager _audioManager;
         private List<Task> _tasks;
         private bool _isActive = false;
-        private AudioManager _audioManager;
 
         private void Start()
         {
@@ -36,6 +37,7 @@ namespace Game.Props
 
             _collider = GetComponent<Collider2D>();
             _animator = GetComponent<Animator>();
+            _renderer = GetComponent<SpriteRenderer>();
             _tasks = new List<Task>();
         }
 
@@ -60,6 +62,7 @@ namespace Game.Props
 
                 if (_runOnce)
                 {
+                    _renderer.color = new Color(255, 255, 255, 0.5f);
                     _collider.enabled = false;
                 }
             }

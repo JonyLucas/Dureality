@@ -87,9 +87,11 @@
     <Compile Include="Assets\Scripts\Audio\SoundFx.cs" />
     <Compile Include="Assets\Scripts\UI\Cutscenes\Frame.cs" />
     <Compile Include="Assets\Scripts\Props\Collectables\CollectableAnimations.cs" />
-    <Compile Include="Assets\Scripts\Props\LaddersBehaviour.cs" />
+    <Compile Include="Assets\Scripts\Props\Ladders\LaddersBehaviour.cs" />
+    <Compile Include="Assets\Scripts\UI\ControlMapping\UpdateKeysOnEnable.cs" />
     <Compile Include="Assets\Scripts\Commands\BaseCommand.cs" />
     <Compile Include="Assets\Scripts\Extensions\VectorExtension.cs" />
+    <Compile Include="Assets\Scripts\Props\BreakingFloorBehaviour.cs" />
     <Compile Include="Assets\Scripts\Observers\Events\GenericGameEvent.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerHealth.cs" />
     <Compile Include="Assets\Scripts\Observers\Events\IntGameEvent.cs" />
@@ -102,8 +104,7 @@
     <Compile Include="Assets\Scripts\UI\Cutscenes\TypewriterEffect.cs" />
     <Compile Include="Assets\Scripts\Commands\Plaftform\DestroyPlatformCommand.cs" />
     <Compile Include="Assets\Scripts\Commands\Movement\MoveRightCommand.cs" />
-    <Compile Include="Assets\Scripts\UI\ControlMapping\UpdateKeysOnEnable.cs" />
-    <Compile Include="Assets\Scripts\Props\BreakingFloorBehaviour.cs" />
+    <Compile Include="Assets\Scripts\Props\Ladders\OnLaddersDisable.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

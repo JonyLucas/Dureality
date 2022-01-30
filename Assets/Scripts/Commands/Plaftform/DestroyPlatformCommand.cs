@@ -25,8 +25,18 @@ namespace Game.Commands.Platform
 
         public override Task Execute()
         {
+            if (associatedObject == null)
+            {
+                return Task.CompletedTask;
+            }
+
             InitializeParent();
             associatedObject.SetActive(!associatedObject.activeInHierarchy);
+
+            if (_breakingFloorPrefab == null)
+            {
+                return Task.CompletedTask;
+            }
 
             if (_breakingFloorInstance == null)
             {

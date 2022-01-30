@@ -88,6 +88,7 @@ namespace Game.Player
 
             if (command != null)
             {
+                _animator.speed = 1;
                 command.FinalizeAction(gameObject);
             }
         }
